@@ -56,7 +56,15 @@ Make sure `pom.xml` has the following:
 ```
 <packaging>war</packaging>
 
+<properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>11</maven.compiler.source>
+    <maven.compiler.target>11</maven.compiler.target>
+    <maven.compiler.release>11</maven.compiler.release>
+</properties>
+
 <build>
+  <finalName>ServletApp</finalName>
   <plugins>
     <plugin>
       <groupId>org.apache.maven.plugins</groupId>
